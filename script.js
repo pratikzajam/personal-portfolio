@@ -76,7 +76,7 @@ $(document).ready(function () {
 // Resume
 
 function downloadAndView() {
-  const url = 'images/PratikZajam.pdf';
+  const url = 'images/PratikZajam_resume.pdf';
   window.open(url, '_blank'); // Opens the file in a new tab for viewing
 
   // Create a hidden link element for download
