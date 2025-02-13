@@ -82,7 +82,7 @@ function downloadAndView() {
   // Create a hidden link element for download
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'shubham_Resume';
+  link.download = 'pratikZajam_resume';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
