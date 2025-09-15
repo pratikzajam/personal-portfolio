@@ -204,14 +204,15 @@ body::before {
 .home {
   display: flex;
   background: var(--primary-dark);
-  height: 100vh;
+  height: auto; /* allow section to shrink to content to avoid huge empty space */
   color: var(--pure-white);
-  min-height: 500px;
+  min-height: 70vh;
   position: relative;
+  padding-top: 80px; /* clear fixed navbar */
 }
 
 .home .max-width {
-  margin: auto 0 auto 40px;
+  margin: 0 0 0 40px; /* remove vertical centering to reduce extra space */
   display: flex;
   align-items: center;
   width: 100%;
@@ -797,6 +798,52 @@ footer {
   }
 }
 
+/* Large mobile / small tablet tweaks (portrait 576–820px) */
+@media (max-width: 820px) and (min-width: 576px) {
+  .home {
+    height: auto;
+    min-height: unset;
+    padding-top: 76px;
+    padding-bottom: 48px;
+  }
+
+  .home .max-width {
+    margin: 0 20px;
+  }
+
+  .home .home-content .text-2 {
+    font-size: 44px;
+  }
+
+  .home .home-content .text-3 {
+    font-size: 22px;
+  }
+
+  .hero-image {
+    max-width: 320px;
+  }
+
+  .hero-svg {
+    max-width: 220px;
+  }
+
+  /* Reduce vertical spacing between sections */
+  section {
+    padding: 72px 0;
+  }
+  .title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Narrow tablet sweet spot */
+@media (min-width: 700px) and (max-width: 820px) {
+  .hero-svg { max-width: 200px; }
+  .home .home-content .text-2 { font-size: 40px; }
+  .home .home-content .text-3 { font-size: 18px; }
+}
+
 @media (max-width: 991px) {
   .home .home-content .text-2 {
     font-size: 48px;
@@ -832,10 +879,18 @@ footer {
   .home {
     flex-direction: column;
     text-align: center;
+    height: auto;          /* remove 100vh on smaller screens */
+    min-height: unset;
+    padding: 60px 0;       /* tighter vertical spacing */
   }
 
   .hero-svg {
     max-width: 300px;
+  }
+
+  /* Remove vertical auto-centering that creates huge top space */
+  .home .max-width {
+    margin: 0 20px;        /* no vertical auto margins */
   }
 }
 
@@ -844,6 +899,15 @@ footer {
   .about .about-content .left img {
     max-width: 180px;
   }
+  /* Keep side-by-side by default at 768 */
+  .home .max-width {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home .home-content { text-align: left; }
+  .hero-image { margin-top: 0; }
   .home .home-content .cta {
     flex-direction: column;
   }
@@ -851,6 +915,22 @@ footer {
   .home .home-content .cta a {
     width: 100%;
     text-align: center;
+  }
+  .home {
+    height: auto;
+    min-height: unset;
+    padding-top: 72px; /* ensure nav clearance */
+    padding-bottom: 40px;
+  }
+  .hero-svg {
+    max-width: 240px;
+  }
+  /* Further tighten on small screens */
+  .home {
+    padding: 48px 0;
+  }
+  .home .max-width {
+    margin: 0 16px;
   }
   /* Slightly smaller CTA text on tablets */
   .home .home-content a {
@@ -905,12 +985,21 @@ footer {
     padding: 12px 16px;
   }
 
+  .home {
+    height: auto;
+    min-height: unset;
+    padding-top: 96px; /* ensure content clears fixed navbar */
+    padding-bottom: 36px;
+  }
+
   .home .home-content .text-2 {
-    font-size: 32px;
+    font-size: 36px;
+    margin-bottom: 8px;
   }
 
   .home .home-content .text-3 {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 16px;
   }
 
   .education-item,
@@ -939,6 +1028,20 @@ footer {
     font-size: 15px;
     padding: 9px 18px;
     border-radius: 8px;
+  }
+
+  .hero-svg {
+    max-width: 180px;
+    margin-top: 12px;
+  }
+
+  /* Tighter spacing on small phones */
+  section {
+    padding: 56px 0;
+  }
+  .title {
+    font-size: 32px;
+    margin-bottom: 24px;
   }
 }
 
