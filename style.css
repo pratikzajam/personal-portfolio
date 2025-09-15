@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -67,6 +68,7 @@ body::before {
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 100vw;
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);
@@ -77,14 +79,24 @@ body::before {
 .max-width {
   max-width: 1300px;
   padding: 0 40px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .navbar .max-width {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | spacer | menu */
+  align-items: center;
+  padding: 15px 40px;
+  width: 100%;
+  max-width: none; /* do not constrain navbar to 1300px */
+  margin: 0; /* span full viewport width */
+}
+
+.navbar .logo {
+  margin-right: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
+  flex: 0 0 auto;
 }
 
 .navbar .logo a {
@@ -106,11 +118,16 @@ body::before {
 .navbar .menu {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 16px;
+  margin-left: auto; /* push links to right */
+  margin-right: 0;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 .navbar .menu li {
-  margin: 0 20px;
+  margin: 0;
 }
 
 .navbar .menu li a {
@@ -251,6 +268,28 @@ body::before {
   color: var(--accent-purple);
 }
 
+/* CTA buttons responsive layout */
+.home .home-content .cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.home .home-content .cta a {
+  margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  .home .home-content .cta {
+    flex-direction: column;
+  }
+
+  .home .home-content .cta a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .hero-image {
   flex: 1;
   display: flex;
@@ -312,10 +351,11 @@ section {
 }
 
 .about .about-content .left img {
-  height: 400px;
-  width: 400px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 12px;
   border: 4px solid var(--accent-purple);
   transition: all 0.3s ease;
 }
@@ -413,6 +453,7 @@ section {
   overflow: hidden;
   border-radius: 20px 20px 0 0;
   height: 200px;
+  max-width: 100%;
 }
 
 .project-image img {
@@ -457,6 +498,7 @@ section {
 
 .project-card .content {
   padding: 25px;
+  overflow-wrap: anywhere;
 }
 
 .project-card .content h3 {
@@ -784,6 +826,7 @@ footer {
 
   .about .about-content .left img {
     margin: 0 auto;
+    max-width: 220px;
   }
 
   .home {
@@ -797,8 +840,28 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Make profile image smaller on tablets */
+  .about .about-content .left img {
+    max-width: 180px;
+  }
+  .home .home-content .cta {
+    flex-direction: column;
+  }
+
+  .home .home-content .cta a {
+    width: 100%;
+    text-align: center;
+  }
+  /* Slightly smaller CTA text on tablets */
+  .home .home-content a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
   nav.navbar > .max-width > .menu-btn {
     display: block;
+    margin-right: 8px; /* nudge slightly from the edge */
+    justify-self: end; /* align to right within grid */
+    grid-column: 3; /* ensure in rightmost column */
   }
 
   .navbar .menu {
@@ -834,6 +897,14 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .max-width {
+    padding: 0 16px;
+  }
+
+  .navbar .max-width {
+    padding: 12px 16px;
+  }
+
   .home .home-content .text-2 {
     font-size: 32px;
   }
@@ -853,5 +924,34 @@ footer {
   section {
     padding: 70px 0;
     scroll-margin-top: 80px;
+  }
+
+  /* Prevent profile image overflow on very small screens */
+  .about .about-content .left img {
+    width: 50%;
+    max-width: 140px;
+    height: auto;
+    border-width: 2px;
+  }
+
+  /* Smaller CTA buttons on mobile */
+  .home .home-content a {
+    font-size: 15px;
+    padding: 9px 18px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about .about-content .left img {
+    width: 45%;
+    max-width: 120px;
+    border-width: 2px;
+  }
+
+  .home .home-content a {
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: 8px;
   }
 }
