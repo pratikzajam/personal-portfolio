@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add this meta description -->
-    <meta name="description" content="Pratik Zajam - Full Stack Developer Portfolio showcasing web development projects and skills in React, Node.js, and MongoDB">
     <title>Pratik Zajam - Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-
+   
 </head>
 
 <body>
@@ -21,17 +19,20 @@
         <div class="max-width">
             <div class="logo"><a href="#">Pratik Zajam</a></div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#project" class="menu-btn">Projects</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
+    <div class="menu-overlay"></div>
 
     <!-- Home Section -->
     <section class="home" id="home">
@@ -40,8 +41,9 @@
                 <div class="text-1">Hey, I am</div>
                 <div class="text-2">Pratik Zajam</div>
                 <div class="text-3">And I'm a <span class="typing">Full Stack Developer</span></div>
-                <a href="#" onclick="downloadResume()">Download Resume</a>
-                <a href="./images/Pratik_Resume.pdf" target="_blank">View Resume</a>
+                 <a href="images/Pratik_Zajam_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+                <a href="images/Pratik_Zajam_Resume.pdf" download="Pratik_Zajam_Resume.pdf" onclick="return downloadResume()">Download Resume</a>
+               
             </div>
             <div class="hero-image">
                 <svg class="hero-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,6 +83,53 @@
                         interfaces with a focus on user experience. Self-motivated and curious, eager to develop skills
                         in modern frontend technologies and contribute to building user-centric products. Looking
                         forward to honing my skills in a dynamic and challenging work environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="max-width">
+            <h2 class="title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>Full Stack Web Development</h3>
+                    <div class="institute">Masai School, Bangalore</div>
+                    <div class="duration">Sep 2024 – Present</div>
+                    <p class="description">Full-stack program focused on JavaScript, React, Node.js, Express, MongoDB, and modern web practices.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Master’s in Computer Science</h3>
+                    <div class="institute">Mumbai University, India</div>
+                    <div class="duration">2021 – 2023</div>
+                    <p class="description">Advanced coursework in computer science with emphasis on software development and systems.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor’s in Computer Science</h3>
+                    <div class="institute">Mumbai University, India</div>
+                    <div class="duration">2018 – 2021</div>
+                    <p class="description">Foundational computer science degree covering programming, data structures, and databases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="max-width">
+            <h2 class="title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <h3>Support Executive</h3>
+                    <div class="company">Phoenix Infotech</div>
+                    <div class="duration">Oct 2021 – Mar 2022</div>
+                    <ul class="achievements">
+                        <li>Worked for client NSDL, ensuring stable platform operations.</li>
+                        <li>Monitored PAAM servers to maintain uninterrupted website uptime.</li>
+                        <li>Resolved technical issues and escalated server downtime cases.</li>
+                        <li>Collaborated with cross-functional teams to maintain 24/7 system uptime.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -161,7 +210,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" fill="#409433"
                             d="M65.036 80.753c.081-.026.222-.034.235-.08.491-1.682 1.996-1.431 3.212-1.641 3.432-.594 6.875-1.13 10.313-1.687 3.326-.539 6.652-1.081 9.981-1.604.394-.062.805-.011 1.208-.012-.622 2.22-1.112 4.488-1.901 6.647-.896 2.449-1.98 4.839-3.131 7.182a49.142 49.142 0 01-6.353 9.763c-1.919 2.308-4.058 4.441-6.202 6.548-1.185 1.165-2.582 2.114-3.882 3.161l-.337-.23-1.214-1.038-1.256-2.753a41.402 41.402 0 01-1.394-9.838l.023-.561.171-2.426c.057-.828.133-1.655.168-2.485.129-2.982.241-5.964.359-8.946z" />
                         <path fill-rule="evenodd" clip-rule="evenodd" fill="#4FAA41"
-                            d="M65.036 80.753c-.118 2.982-.23 5.964-.357 8.947.035.83.111 1.657.168 2.485l-.765.289c-1.699-5.002-3.399-9.951-5.062-14.913-2.75-8.209-5.467-16.431-8.213-24.642a4498.887 4498.887 0 00-6.7-19.867c-.105-.31-.407-.552-.617-.826l4.896-9.002c.168.292.39.565.496.879a6167.476 6167.476 0 016.768 20.118c2.916 8.73 5.814 17.467 8.728 26.198.116.349.308.671.491 1.062l.67-.78-.167 10.052z" />
+                            d="M65.036 80.753c-.118 2.982-.23 5.964-.357 8.947-.035.83-.111 1.657-.168 2.485l-.765.289c-1.699-5.002-3.399-9.951-5.062-14.913-2.75-8.209-5.467-16.431-8.213-24.642a4498.887 4498.887 0 00-6.7-19.867c-.105-.31-.407-.552-.617-.826l4.896-9.002c.168.292.39.565.496.879a6167.476 6167.476 0 016.768 20.118c2.916 8.73 5.814 17.467 8.728 26.198.116.349.308.671.491 1.062l.67-.78-.167 10.052z" />
                         <path fill-rule="evenodd" clip-rule="evenodd" fill="#4AA73C"
                             d="M43.155 32.227c.21.274.511.516.617.826a4498.887 4498.887 0 016.7 19.867c2.746 8.211 5.463 16.433 8.213 24.642 1.662 4.961 3.362 9.911 5.062 14.913l.765-.289-.171 2.426-.155.559c-.266 2.656-.49 5.318-.814 7.968-.163 1.328-.509 2.632-.772 3.947-.198-.287-.476-.548-.583-.866-5.467-16.297-10.918-32.6-16.376-48.9a3888.972 3888.972 0 00-5.242-15.551c-.089-.263-.34-.469-.516-.702l3.272-8.84z" />
                         <path fill-rule="evenodd" clip-rule="evenodd" fill="#57AE47"
@@ -201,7 +250,8 @@
 
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="images/images/investfolio.png" alt="Investfolio Project Screenshot" loading="lazy" style="width:100%; height:200px; object-fit:cover; border-radius:10px; background:var(--primary-dark);">
+                    <img src="images/images/investfolio.png" alt="Investfolio Project Screenshot"
+                        style="width:100%; height:200px; object-fit:cover; border-radius:10px; background:var(--primary-dark);">
                     <div class="content">
                         <h3>Investfolio</h3>
                         <p>A full-stack investment portfolio tracking application built with the MERN stack
@@ -239,8 +289,8 @@
                     <div class="content">
                         <h3>Transcript.ai</h3>
                         <p>A powerful backend application that allows users to upload audio/video files and receive
-                            accurate transcriptions powered by OpenAI's Whisper model.</p>
-                        <p class="tech-stack"><strong>Tech Stack:</strong> React | Express | MongoDB | Flask API</p>
+                            accurate transcriptions.</p>
+                        <p class="tech-stack"><strong>Tech Stack:</strong> React |MongoDB | Flask API</p>
                         <div class="project-links">
                             <a href="https://github.com/pratikzajam/transcript" target="_blank" class="repo-link">Git
                                 Repo</a>
@@ -336,158 +386,19 @@
 
     <!-- Footer -->
     <footer>
-        <span><i class="far fa-copyright"></i> 2024 Pratik Zajam Portfolio. All rights reserved.</span>
+        <span>
+            <i class="far fa-copy"></i>
+            <span id="footer-year"></span> Pratik Zajam Portfolio. All rights reserved.
+            &nbsp;•&nbsp; Made with <span style="color:#e11d48">❤</span> by Pratik Zajam
+        </span>
     </footer>
 
     <script>
-        // Typing Animation
-        const typed = new (function () {
-            const texts = ["Full Stack Developer", "Web Developer", "React Developer", "Software Engineer"];
-            let textIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-            const typingElement = document.querySelector('.typing');
-            const typingElement2 = document.querySelector('.typing-2');
-
-            function type() {
-                const currentText = texts[textIndex];
-
-                if (isDeleting) {
-                    charIndex--;
-                } else {
-                    charIndex++;
-                }
-
-                const displayText = currentText.substring(0, charIndex);
-                if (typingElement) typingElement.textContent = displayText;
-                if (typingElement2) typingElement2.textContent = displayText;
-
-                let typeSpeed = isDeleting ? 50 : 100;
-
-                if (!isDeleting && charIndex === currentText.length) {
-                    typeSpeed = 2000;
-                    isDeleting = true;
-                } else if (isDeleting && charIndex === 0) {
-                    isDeleting = false;
-                    textIndex = (textIndex + 1) % texts.length;
-                    typeSpeed = 500;
-                }
-
-                setTimeout(type, typeSpeed);
-            }
-
-            type();
-        })();
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            const scrollBtn = document.querySelector('.scroll-up-btn');
-
-            if (window.scrollY > 20) {
-                navbar.classList.add('sticky');
-                scrollBtn.classList.add('show');
-            } else {
-                navbar.classList.remove('sticky');
-                scrollBtn.classList.remove('show');
-            }
-        });
-
-        // Mobile menu toggle
-        const menuBtn = document.querySelector('.menu-btn');
-        const menu = document.querySelector('.menu');
-
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            menuBtn.querySelector('i').classList.toggle('fa-times');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('active');
-                menuBtn.querySelector('i').classList.remove('fa-times');
-            });
-        });
-
-        // Scroll to top
-        document.querySelector('.scroll-up-btn').addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        function downloadResume() {
-            const link = document.createElement('a');
-            link.href = './images/Pratik_Resume.pdf'; // path to your file
-            link.download = 'Pratik_Resume.pdf'; // downloaded file name
-            link.click();
-        }
-
-
-        // Contact form handling
-        document.getElementById('contact-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-
-            // Simulate form submission (you would replace this with actual form handling)
-            setTimeout(() => {
-                document.getElementById('form-message').style.display = 'block';
-                this.reset();
-
-                setTimeout(() => {
-                    document.getElementById('form-message').style.display = 'none';
-                }, 3000);
-            }, 1000);
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe sections for animations
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-
+     
 
     </script>
     <script src="https://kit.fontawesome.com/4d82b69b8b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
