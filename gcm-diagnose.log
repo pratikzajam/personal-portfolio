@@ -1,0 +1,192 @@
+﻿Diagnose log at 2026-06-09T07:45:56Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.6.1+786ab03440ddc82e807a97c0e540f5247e44cec6
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\Akshay Bata
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=DESKTOP-39CMA2L
+GIT_TRACE2_PARENT_SID=67009bb8-b62d-4283-b02b-db6696f616a2
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\Akshay Bata\OneDrive
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+PROCESSOR_REVISION=a000
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+python2=C:\Users\Akshay Bata\AppData\Local\Python\pythoncore-3.14-64\Scripts\
+GIT_ASKPASS=c:\Users\Akshay Bata\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\493597c785d4c5cb\askpass.sh
+TMP=C:\Users\AKSHAY~1\AppData\Local\Temp
+TEMP=C:\Users\AKSHAY~1\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\Akshay Bata\AppData\Local
+MSYSTEM=MINGW64
+TERM=xterm-256color
+COLORTERM=truecolor
+USERDOMAIN=DESKTOP-39CMA2L
+ProgramFiles(x86)=C:\Program Files (x86)
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Akshay Bata\bin;c:\Users\Akshay Bata\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Akshay Bata\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;D:\Client\clients\tools\datadirect;D:\Client\clients\tools\odbcdrv;D:\Client\clients\tools\jdbcdrv;D:\Client\clients\tools\sharedlibs;D:\Informatica\java\jre\bin\server;D:\Informatica\tools\odbcdrv;D:\Informatica\tools\jdbcdrv;D:\Informatica\tools\sharedlibs;D:\Informatica\tools\datadirect;D:\ORACLE_DB11.2\app\oracle\product\11.2.0\server\bin;C:\db_home\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Akshay Bata\AppData\Local\Microsoft\WindowsApps;D:\Fiddler;C:\Users\Akshay Bata\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Akshay Bata\AppData\Roaming\npm;C:\Users\Akshay Bata\AppData\Local\GitHubDesktop\bin;C:\Users\Akshay Bata\AppData\Local\Python\bin
+TERM_PROGRAM=vscode
+PROCESSOR_LEVEL=23
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 160 Stepping 0, AuthenticAMD
+TMPDIR=C:\Users\AKSHAY~1\AppData\Local\Temp
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+TERM_PROGRAM_VERSION=1.121.0
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\Akshay Bata\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\493597c785d4c5cb\askpass-main.js
+PSModulePath=C:\Users\Akshay Bata\OneDrive\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+NUMBER_OF_PROCESSORS=8
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+VSCODE_INJECTION=1
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-1204664879-sock
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_17912_NVQWISFMQLGICUHC
+PLINK_PROTOCOL=ssh
+ProgramData=C:\ProgramData
+ProgramW6432=C:\Program Files
+ProgramFiles=C:\Program Files (x86)
+VSCODE_GIT_ASKPASS_NODE=C:\Users\Akshay Bata\AppData\Local\Programs\Microsoft VS Code\Code.exe
+SystemRoot=C:\WINDOWS
+HOME=C:\Users\Akshay Bata
+python=C:\Users\Akshay Bata\AppData\Local\Python\pythoncore-3.14-64\
+CommonProgramW6432=C:\Program Files\Common Files
+LOGONSERVER=\\DESKTOP-39CMA2L
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-39CMA2L
+APPDATA=C:\Users\Akshay Bata\AppData\Roaming
+HOMEDRIVE=C:
+INFA_TRUSTSTORE=D:\Client\clients\shared\security
+USERNAME=Akshay Bata
+PROCESSOR_ARCHITEW6432=AMD64
+PROCESSOR_ARCHITECTURE=x86
+USERPROFILE=C:\Users\Akshay Bata
+OS=Windows_NT
+ComSpec=C:\WINDOWS\system32\cmd.exe
+SystemDrive=C:
+windir=C:\WINDOWS
+LANG=en_US.UTF-8
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\Akshay Bata\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\Akshay Bata\AppData\Local\Temp\3b83437bb20e3a80b2b92eb3'... OK
+Reading from temporary file 'C:\Users\Akshay Bata\AppData\Local\Temp\3b83437bb20e3a80b2b92eb3'... OK
+Deleting temporary file 'C:\Users\Akshay Bata\AppData\Local\Temp\3b83437bb20e3a80b2b92eb3'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\Akshay Bata
+UserDataDirectoryPath: C:\Users\Akshay Bata\.gcm
+GetCurrentDirectory(): D:\portfolio-github\personal-portfolio
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:53852/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.52.0.windows.1'
+Locating current repository...Git repository at 'D:/portfolio-github/personal-portfolio/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/Akshay Bata/.gitconfig	user.name=Pratik Zajam
+file:C:/Users/Akshay Bata/.gitconfig	user.email=zajampratik@gmail.com
+file:C:/Users/Akshay Bata/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/Akshay Bata/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/Akshay Bata/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/Akshay Bata/.gitconfig	filter.lfs.required=true
+file:C:/Users/Akshay Bata/.gitconfig	core.editor="C:\Users\Akshay Bata\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/pratikzajam/personal-portfolio.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.master.remote=origin
+file:.git/config	branch.master.merge=refs/heads/master
+file:.git/config	branch.master.vscode-merge-base=origin/master
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\Akshay Bata\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\Akshay Bata\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
